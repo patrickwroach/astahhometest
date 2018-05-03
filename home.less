@@ -1,0 +1,581 @@
+/* @import "/resources-global/styles/library.less";   Need to adjust for new file structure */
+@max-content-width: 920px;
+@astah-dark-grey: #333333;
+@astah-green: #5c9f43;
+@astah-light-green: #dae237;
+@astah-mid-grey: #4b4949;
+@astah-white: #fff;
+@astah-grey: #e6e6e6;
+@astah-blue: #bab7ea;
+@astah-purple: #663b79;
+
+//Global Styling updates for Home
+
+body {
+  min-width: 300px;
+  min-height: 500px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+a {
+  cursor: pointer;
+}
+// Repetious Elements
+
+a.button {
+  box-sizing: border-box;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 900;
+  padding: 10px 20px;
+  border-radius: 25px;
+  color: fade(@astah-green, 90%);
+  margin: 0;
+  font-size: 1.85vw;
+  margin-right: 25px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  &.white {
+    background-color: @astah-white;
+  }
+
+  &.hollow {
+    background: transparent;
+    border: 2px solid;
+
+    &.purple-outline {
+      border-color: @astah-purple;
+      color: @astah-purple;
+    }
+
+    &.green-outline {
+      border-color: @astah-green;
+      color: @astah-green;
+    }
+
+  }
+
+  &.green-text {
+    color: @astah-green;
+  }
+
+  &.purple-text {
+    color: @astah-green;
+  }
+}
+//Main structural component updates for HP
+
+.content-container {
+  width: 100%;
+  padding: 50px 0;
+
+  .content {
+    width: 80%;
+    max-width: @max-content-width;
+    text-align: center;
+
+    h2 {
+      color: @astah-green;
+      margin: 15px 0 0;
+      font-weight: 700;
+      font-size: 2.5vw;
+    }
+
+    p {
+      margin: 25px 0;
+      font-size: 1.5vw;
+      line-height: 125%;
+    }
+
+    .section {
+      display: table;
+      height: 100%;
+      width: 100%;
+      text-align: center;
+
+      .column {
+        display: table-cell;
+        vertical-align: middle;
+        padding-right: 5vw;
+
+        &:last-of-type {
+          padding-right: 0;
+        }
+
+        &.image {
+          img {
+            width: 100%;
+          }
+        }
+
+        &.copy {
+
+          text-align: left;
+
+          h3 {
+            font-size: 2vw;
+          }
+
+          img {
+            width: 80%;
+
+          }
+
+          a.button {
+            font-size: 1.5vw;
+          }
+        }
+
+      }
+
+      &.three-column {
+        .column {
+          padding: 0 3%;
+          width: 26%;
+          vertical-align: top;
+
+          &.copy {
+            h3 {
+              font-weight: bold;
+              font-size: 1.2vw;
+            }
+
+            a.button,
+            p {
+              font-size: 14px;
+            }
+          }
+        }
+
+      }
+
+      &.bordered-row {
+        border-bottom: 1px @astah-dark-grey solid;
+
+        .column {
+          padding: 2.5vw;
+
+          border-right: 1px @astah-dark-grey solid;
+
+          &:last-of-type {
+            border-right: none;
+          }
+        }
+
+        &:last-of-type {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+
+  &.light-green {
+    background-color: fade(@astah-green, 15%);
+
+  }
+
+  &.hexed {
+    background: url("./images/HexagonGrid.png");
+  }
+}
+
+//IDed Elements
+
+#header {
+  a {
+    font-family: Verdana, Geneva, sans-serif;
+  }
+
+  .main-nav-container {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  &.announcement-on {
+    .secondary-nav-container {
+      .top-announcement-wrapper {
+        display: block;
+      }
+
+      .content {
+        top: 50px;
+      }
+    }
+  }
+}
+
+.content-container#monthly-cta {
+  background: @astah-light-green;
+  padding: 25px 0;
+
+  .content {
+    text-align: center;
+
+    a {
+      color: @astah-mid-grey;
+      font-size: 18px;
+      font-weight: 700;
+
+      img {
+        width: 30px;
+        height: 30px;
+        margin: 0 0 -5px 5px;
+      }
+    }
+  }
+}
+
+.content-container#banner {
+  background: url("./images/banner-background.jpg") no-repeat @astah-white;
+  background-position: 50% 70%;
+  background-size: cover;
+  color: @astah-white;
+  text-align: left;
+  position: relative;
+  height: 60vh;
+  min-height: 335px;
+
+  .content {
+    position: relative;
+    width: 100%;
+    max-width: none;
+    height: 100%;
+
+    .text-box {
+      position: absolute;
+
+      box-sizing: border-box;
+      right: 0;
+      bottom: 5vh;
+      width: 55%;
+      background: fade(@astah-green, 96%);
+      padding: 25px;
+      color: @astah-white;
+
+      h1 {
+        margin: 0 25px 25px 0;
+        color: @astah-white;
+        display: block;
+        font-weight: 700;
+        line-height: 98%;
+        font-size: 4vw;
+      }
+
+      p {
+        color: @astah-white;
+        display: block;
+        font-size: 1.75vw;
+        font-weight: 700;
+        margin: 25px 25px 25px 0;
+      }
+
+      a.button {
+        background: @astah-white;
+        box-sizing: border-box;
+        display: inline-block;
+        text-decoration: none;
+        font-weight: 900;
+        padding: 10px 20px;
+        border-radius: 25px;
+        color: fade(@astah-green, 90%);
+        margin: 0;
+        font-size: 1.85vw;
+      }
+    }
+
+  }
+}
+
+.content-container#astah-professional {
+  .content {
+    .section {
+      h2 {
+        color: @astah-dark-grey;
+      }
+
+      .column {
+        &.image {
+          width: 252px;
+        }
+
+      }
+    }
+  }
+}
+
+.content-container#clients {
+  .content {
+    .section {
+      .column {
+        &.image {
+          width: 20%;
+          //hot fixes for irregular logos, for baselining/sizing reasons.  Adjustments specific to img files
+          img#ge,
+          img#nyse {
+            width: 60%;
+          }
+
+          img#amazon {
+            margin-bottom: -20%;
+          }
+        }
+      }
+    }
+
+  }
+}
+
+.content-container#reasons {
+  .content {
+    .section {
+      .column {
+        &.copy {
+          img {
+            display: block;
+            margin: 0 auto;
+            width: 25%;
+          }
+        }
+      }
+    }
+
+    .button {
+      font-size: 15px;
+    }
+  }
+}
+
+.content-container#friends {
+  .content {
+    .section {
+      .column {
+        &.image {
+          width: 30%;
+
+          img {
+            border-radius: 50%;
+          }
+        }
+
+        &.copy {
+          p.attribution {
+            font-size: 1.1vw;
+            font-style: italic;
+
+          }
+        }
+
+      }
+    }
+
+    .button {
+      font-size: 15px;
+    }
+  }
+}
+
+//Size Responsive Styling
+@media only screen and (max-width: 700px) {
+  .content-container {
+    .content {
+      h2,
+      h3 {
+        font-size: 25px;
+      }
+
+      p {
+        font-size: 15px;
+      }
+      a.button{
+        margin:0;
+      }
+
+      .section,
+      .section.three-column {
+
+        display: block;
+
+        .column {
+          display: inline-block;
+          margin: 25px 0;
+          width: 100%;
+
+          &.copy {
+            h2,
+            h3 {
+              font-size: 25px;
+            }
+
+            a.button {
+              font-size: 15px;
+            }
+          }
+
+        }
+      }
+
+      .section.bordered-row {
+        border: none;
+
+        .column {
+          margin: 0;
+          border: none;
+
+        }
+      }
+
+    }
+  }
+
+  .content-container#monthly-cta {
+    background: @astah-light-green;
+    padding: 25px 0;
+
+    .content {
+      text-align: center;
+
+      a {
+        color: @astah-mid-grey;
+        font-size: 15px;
+        font-weight: 700;
+
+        img {
+          width: 20px;
+          height: 20px;
+          margin: 0 0 -3px 3px;
+        }
+      }
+    }
+  }
+
+  .content-container#banner {
+    background-position-x: 0;
+    height: 50vh;
+
+    .content {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: table;
+      padding: 5vh 0;
+
+      .text-box {
+        padding: 0 10px;
+        box-sizing: border-box;
+        position: static;
+        width: 100%;
+        background-color: fade(@astah-green, 85%);
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+
+        h1 {
+          font-size: 30px;
+          margin-top: 0;
+        }
+
+        p {
+          font-size: 15px;
+          margin: 25px 0;
+        }
+
+        h1,
+        p {
+          padding: 0;
+          font-weight: 700;
+
+        }
+
+        a.button {
+          font-size: 15px;
+          margin: 0 auto;
+
+        }
+
+      }
+
+    }
+  }
+
+  .content-container#astah-professional {
+    .content {
+      .section {
+        .column {
+          &.image {
+            display: none;
+
+          }
+        }
+      }
+    }
+  }
+
+  .content-container#clients {
+    .content {
+      .section {
+        &.bordered-row {
+          .column {
+            &.image {
+              width: 15%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .content-container#friends {
+    .content {
+      .section {
+        .column {
+          &.copy {
+            p {
+              &.attribution {
+                font-size: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//IE Hot fixes
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {}
+
+//IE responsive sizing Hot Fixes
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) and (max-width: 700px) {
+  .content-container#banner {
+    .content {
+
+      padding: 0;
+
+    }
+  }
+
+}
+//FF Hot fixes
+@-moz-document url-prefix() {
+   @media only screen and (max-width: 700px){
+    .content-container#banner {
+      .content {
+
+        padding: 0;
+
+      }
+    }
+
+  }
+}

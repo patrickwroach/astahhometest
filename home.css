@@ -1,0 +1,368 @@
+/* @import "/resources-global/styles/library.less";   Need to adjust for new file structure */
+body {
+  min-width: 300px;
+  min-height: 500px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+a {
+  cursor: pointer;
+}
+a.button {
+  box-sizing: border-box;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 900;
+  padding: 10px 20px;
+  border-radius: 25px;
+  color: rgba(92, 159, 67, 0.9);
+  margin: 0;
+  font-size: 1.85vw;
+  margin-right: 25px;
+}
+a.button:last-of-type {
+  margin-right: 0;
+}
+a.button.white {
+  background-color: #fff;
+}
+a.button.hollow {
+  background: transparent;
+  border: 2px solid;
+}
+a.button.hollow.purple-outline {
+  border-color: #663b79;
+  color: #663b79;
+}
+a.button.hollow.green-outline {
+  border-color: #5c9f43;
+  color: #5c9f43;
+}
+a.button.green-text {
+  color: #5c9f43;
+}
+a.button.purple-text {
+  color: #5c9f43;
+}
+.content-container {
+  width: 100%;
+  padding: 50px 0;
+}
+.content-container .content {
+  width: 80%;
+  max-width: 920px;
+  text-align: center;
+}
+.content-container .content h2 {
+  color: #5c9f43;
+  margin: 15px 0 0;
+  font-weight: 700;
+  font-size: 2.5vw;
+}
+.content-container .content p {
+  margin: 25px 0;
+  font-size: 1.5vw;
+  line-height: 125%;
+}
+.content-container .content .section {
+  display: table;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+.content-container .content .section .column {
+  display: table-cell;
+  vertical-align: middle;
+  padding-right: 5vw;
+}
+.content-container .content .section .column:last-of-type {
+  padding-right: 0;
+}
+.content-container .content .section .column.image img {
+  width: 100%;
+}
+.content-container .content .section .column.copy {
+  text-align: left;
+}
+.content-container .content .section .column.copy h3 {
+  font-size: 2vw;
+}
+.content-container .content .section .column.copy img {
+  width: 80%;
+}
+.content-container .content .section .column.copy a.button {
+  font-size: 1.5vw;
+}
+.content-container .content .section.three-column .column {
+  padding: 0 3%;
+  width: 26%;
+  vertical-align: top;
+}
+.content-container .content .section.three-column .column.copy h3 {
+  font-weight: bold;
+  font-size: 1.2vw;
+}
+.content-container .content .section.three-column .column.copy a.button,
+.content-container .content .section.three-column .column.copy p {
+  font-size: 14px;
+}
+.content-container .content .section.bordered-row {
+  border-bottom: 1px #333333 solid;
+}
+.content-container .content .section.bordered-row .column {
+  padding: 2.5vw;
+  border-right: 1px #333333 solid;
+}
+.content-container .content .section.bordered-row .column:last-of-type {
+  border-right: none;
+}
+.content-container .content .section.bordered-row:last-of-type {
+  border-bottom: none;
+}
+.content-container.light-green {
+  background-color: rgba(92, 159, 67, 0.15);
+}
+.content-container.hexed {
+  background: url("images/HexagonGrid.png");
+}
+#header a {
+  font-family: Verdana, Geneva, sans-serif;
+}
+#header .main-nav-container {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+#header.announcement-on .secondary-nav-container .top-announcement-wrapper {
+  display: block;
+}
+#header.announcement-on .secondary-nav-container .content {
+  top: 50px;
+}
+.content-container#monthly-cta {
+  background: #dae237;
+  padding: 25px 0;
+}
+.content-container#monthly-cta .content {
+  text-align: center;
+}
+.content-container#monthly-cta .content a {
+  color: #4b4949;
+  font-size: 18px;
+  font-weight: 700;
+}
+.content-container#monthly-cta .content a img {
+  width: 30px;
+  height: 30px;
+  margin: 0 0 -5px 5px;
+}
+.content-container#banner {
+  background: url("images/banner-background.jpg") no-repeat #fff;
+  background-position: 50% 70%;
+  background-size: cover;
+  color: #fff;
+  text-align: left;
+  position: relative;
+  height: 60vh;
+  min-height: 335px;
+}
+.content-container#banner .content {
+  position: relative;
+  width: 100%;
+  max-width: none;
+  height: 100%;
+}
+.content-container#banner .content .text-box {
+  position: absolute;
+  box-sizing: border-box;
+  right: 0;
+  bottom: 5vh;
+  width: 55%;
+  background: rgba(92, 159, 67, 0.96);
+  padding: 25px;
+  color: #fff;
+}
+.content-container#banner .content .text-box h1 {
+  margin: 0 25px 25px 0;
+  color: #fff;
+  display: block;
+  font-weight: 700;
+  line-height: 98%;
+  font-size: 4vw;
+}
+.content-container#banner .content .text-box p {
+  color: #fff;
+  display: block;
+  font-size: 1.75vw;
+  font-weight: 700;
+  margin: 25px 25px 25px 0;
+}
+.content-container#banner .content .text-box a.button {
+  background: #fff;
+  box-sizing: border-box;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 900;
+  padding: 10px 20px;
+  border-radius: 25px;
+  color: rgba(92, 159, 67, 0.9);
+  margin: 0;
+  font-size: 1.85vw;
+}
+.content-container#astah-professional .content .section h2 {
+  color: #333333;
+}
+.content-container#astah-professional .content .section .column.image {
+  width: 252px;
+}
+.content-container#clients .content .section .column.image {
+  width: 20%;
+}
+.content-container#clients .content .section .column.image img#ge,
+.content-container#clients .content .section .column.image img#nyse {
+  width: 60%;
+}
+.content-container#clients .content .section .column.image img#amazon {
+  margin-bottom: -20%;
+}
+.content-container#reasons .content .section .column.copy img {
+  display: block;
+  margin: 0 auto;
+  width: 25%;
+}
+.content-container#reasons .content .button {
+  font-size: 15px;
+}
+.content-container#friends .content .section .column.image {
+  width: 30%;
+}
+.content-container#friends .content .section .column.image img {
+  border-radius: 50%;
+}
+.content-container#friends .content .section .column.copy p.attribution {
+  font-size: 1.1vw;
+  font-style: italic;
+}
+.content-container#friends .content .button {
+  font-size: 15px;
+}
+@media only screen and (max-width: 700px) {
+  .content-container .content h2,
+  .content-container .content h3 {
+    font-size: 25px;
+  }
+  .content-container .content p {
+    font-size: 15px;
+  }
+  .content-container .content a.button {
+    margin: 0;
+  }
+  .content-container .content .section,
+  .content-container .content .section.three-column {
+    display: block;
+  }
+  .content-container .content .section .column,
+  .content-container .content .section.three-column .column {
+    display: inline-block;
+    margin: 25px 0;
+    width: 100%;
+  }
+  .content-container .content .section .column.copy h2,
+  .content-container .content .section.three-column .column.copy h2,
+  .content-container .content .section .column.copy h3,
+  .content-container .content .section.three-column .column.copy h3 {
+    font-size: 25px;
+  }
+  .content-container .content .section .column.copy a.button,
+  .content-container .content .section.three-column .column.copy a.button {
+    font-size: 15px;
+  }
+  .content-container .content .section.bordered-row {
+    border: none;
+  }
+  .content-container .content .section.bordered-row .column {
+    margin: 0;
+    border: none;
+  }
+  .content-container#monthly-cta {
+    background: #dae237;
+    padding: 25px 0;
+  }
+  .content-container#monthly-cta .content {
+    text-align: center;
+  }
+  .content-container#monthly-cta .content a {
+    color: #4b4949;
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .content-container#monthly-cta .content a img {
+    width: 20px;
+    height: 20px;
+    margin: 0 0 -3px 3px;
+  }
+  .content-container#banner {
+    background-position-x: 0;
+    height: 50vh;
+  }
+  .content-container#banner .content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: table;
+    padding: 5vh 0;
+  }
+  .content-container#banner .content .text-box {
+    padding: 0 10px;
+    box-sizing: border-box;
+    position: static;
+    width: 100%;
+    background-color: rgba(92, 159, 67, 0.85);
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+  .content-container#banner .content .text-box h1 {
+    font-size: 30px;
+    margin-top: 0;
+  }
+  .content-container#banner .content .text-box p {
+    font-size: 15px;
+    margin: 25px 0;
+  }
+  .content-container#banner .content .text-box h1,
+  .content-container#banner .content .text-box p {
+    padding: 0;
+    font-weight: 700;
+  }
+  .content-container#banner .content .text-box a.button {
+    font-size: 15px;
+    margin: 0 auto;
+  }
+  .content-container#astah-professional .content .section .column.image {
+    display: none;
+  }
+  .content-container#clients .content .section.bordered-row .column.image {
+    width: 15%;
+  }
+  .content-container#friends .content .section .column.copy p.attribution {
+    font-size: 15px;
+  }
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) and (max-width: 700px) {
+  .content-container#banner .content {
+    padding: 0;
+  }
+}
+@-moz-document url-prefix() {
+  @media only screen and (max-width: 700px) {
+    .content-container#banner .content {
+      padding: 0;
+    }
+  }
+}

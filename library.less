@@ -1,0 +1,39 @@
+@max-content-width: 920px;
+@astah-dark-grey: #333333;
+@astah-green: #5c9f43;
+@astah-white: #fff;
+@astah-grey: #e6e6e6;
+@astah-blue: #bab7ea;
+@astah-dark-blue:#8c8aaf;
+@astah-light-green: #71be44;
+@astah-black:#000000;
+@astah-orange:#f18444;
+@astah-purple:rgb(146, 60, 184);
+
+.mixin-clearlist(){
+    list-style: none; padding:0; margin:0;
+    >li { list-style: none; padding:0; margin:0;  }
+}
+
+.mixin-horizontal-list() {
+    list-style-type: none;
+    margin: 0;
+
+    li {
+        display: inline-block;
+    }
+}
+
+.mixin-a-clean() { 
+    text-decoration: none; 
+    color: inherit; 
+    &:hover { color: inherit; } 
+}
+
+.mixin-clear-after() {
+    &:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
