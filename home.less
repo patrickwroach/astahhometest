@@ -440,7 +440,51 @@ a.button {
 
     }
   }
+#header{
+  min-width:300px;
+  .secondary-nav-container{
+    .content{
+      ul{
 
+        li{
+          margin:  5px 5px;
+          font-size: 10px;
+          &:nth-last-child(-n+3){
+            display:none;
+          }
+        }
+      }
+    }
+  }
+    .main-nav-container{
+      padding-bottom:10px;
+    
+      .content{
+        padding-top:10px;
+      a.logo{
+        display:none;
+      }
+      ul{
+        position: relative;
+        padding-left: 0;
+        width:99vw;
+        min-width:300px;
+        text-align:center;
+        li{
+          margin-left:0;
+          margin: 10px;
+          font-size:15px;
+          &:first-child{
+          
+            
+          }
+        }
+      }
+    }
+    }
+  
+  
+}
   .content-container#monthly-cta {
     background: @astah-light-green;
     padding: 25px 0;
@@ -553,7 +597,30 @@ a.button {
       }
     }
   }
+  .content-container#footer {
+    height:100%;
+    width:100%;
+    .content {
+     width:95%;
+      .footer-links{
+       margin:0 auto;
+        width:80%;
+        padding-top:0;
+        text-align: left;
+        
+        .footer-col{
+          float: none;
+          display: inline-block;
+          vertical-align: top;
+          margin: 10px 0;
+          width: 195px;
+        }
+      }
+    }
+  }
 }
+
+
 //IE Hot fixes
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {}
 

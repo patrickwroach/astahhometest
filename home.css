@@ -291,6 +291,37 @@ a.button.purple-text {
     margin: 0;
     border: none;
   }
+  #header {
+    min-width: 300px;
+  }
+  #header .secondary-nav-container .content ul li {
+    margin: 5px 5px;
+    font-size: 10px;
+  }
+  #header .secondary-nav-container .content ul li:nth-last-child(-n+3) {
+    display: none;
+  }
+  #header .main-nav-container {
+    padding-bottom: 10px;
+  }
+  #header .main-nav-container .content {
+    padding-top: 10px;
+  }
+  #header .main-nav-container .content a.logo {
+    display: none;
+  }
+  #header .main-nav-container .content ul {
+    position: relative;
+    padding-left: 0;
+    width: 99vw;
+    min-width: 300px;
+    text-align: center;
+  }
+  #header .main-nav-container .content ul li {
+    margin-left: 0;
+    margin: 10px;
+    font-size: 15px;
+  }
   .content-container#monthly-cta {
     background: #dae237;
     padding: 25px 0;
@@ -354,6 +385,26 @@ a.button.purple-text {
   }
   .content-container#friends .content .section .column.copy p.attribution {
     font-size: 15px;
+  }
+  .content-container#footer {
+    height: 100%;
+    width: 100%;
+  }
+  .content-container#footer .content {
+    width: 95%;
+  }
+  .content-container#footer .content .footer-links {
+    margin: 0 auto;
+    width: 80%;
+    padding-top: 0;
+    text-align: left;
+  }
+  .content-container#footer .content .footer-links .footer-col {
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px 0;
+    width: 195px;
   }
 }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) and (max-width: 700px) {
