@@ -130,6 +130,7 @@ a.button.purple-text {
 }
 .content-container.hexed {
   background: url("images/HexagonGrid.png");
+  background-size: cover;
 }
 #header a {
   font-family: Verdana, Geneva, sans-serif;
