@@ -139,6 +139,7 @@ a.button.purple-text {
   border-bottom: 0;
   padding-bottom: 25px;
   padding-top: 25px;
+  min-width: 0;
 }
 #header.announcement-on .secondary-nav-container .top-announcement-wrapper {
   display: block;
@@ -253,6 +254,9 @@ a.button.purple-text {
 .content-container#friends .content .button {
   font-size: 15px;
 }
+.content-container#footer .content {
+  min-width: 0;
+}
 @media only screen and (max-width: 700px) {
   .content-container .content h2,
   .content-container .content h3 {
@@ -305,6 +309,7 @@ a.button.purple-text {
     padding-bottom: 10px;
   }
   #header .main-nav-container .content {
+    min-width: none;
     padding-top: 10px;
   }
   #header .main-nav-container .content a.logo {
