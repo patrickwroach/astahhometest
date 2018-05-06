@@ -137,7 +137,8 @@ a.button.purple-text {
 }
 #header .main-nav-container {
   border-bottom: 0;
-  padding-bottom: 0;
+  padding-bottom: 25px;
+  padding-top: 25px;
 }
 #header.announcement-on .secondary-nav-container .top-announcement-wrapper {
   display: block;
