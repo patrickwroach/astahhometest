@@ -51,6 +51,11 @@ a.button {
     background-color: @astah-white;
   }
 
+  &.green {
+    background-color: @astah-green;
+    color: @astah-white;
+  }
+
   &.hollow {
     background: transparent;
     border: 2px solid;
@@ -188,7 +193,7 @@ a.button {
 
   &.hexed {
     background: url("./images/HexagonGrid.png");
-    background-size:cover;
+    background-size: cover;
   }
 }
 
@@ -204,7 +209,7 @@ a.button {
     padding-bottom: 25px;
     padding-top: 25px;
     min-width: 0;
-    
+
   }
 
   &.announcement-on {
@@ -363,6 +368,8 @@ a.button {
 
 .content-container#friends {
   .content {
+    position: relative;
+
     .section {
       .column {
         &.image {
@@ -375,7 +382,7 @@ a.button {
 
         &.copy {
           p.attribution {
-            font-size: 1.1vw;
+            font-size: 1.2vw;
             font-style: italic;
 
           }
@@ -385,13 +392,27 @@ a.button {
     }
 
     .button {
-      font-size: 15px;
+      font-size: 17px;
+
+      &.slider {
+        position: absolute;
+        left: 0;
+        bottom: 5px;
+
+        padding: 5px 20px;
+
+        &:last-of-type {
+          left: initial;
+          right: 0;
+        }
+      }
     }
   }
 }
-.content-container#footer{
-  .content{
-  min-width:0;
+
+.content-container#footer {
+  .content {
+    min-width: 0;
   }
 }
 //Size Responsive Styling
@@ -406,8 +427,9 @@ a.button {
       p {
         font-size: 15px;
       }
-      a.button{
-        margin:0;
+
+      a.button {
+        margin: 0;
       }
 
       .section,
@@ -446,52 +468,56 @@ a.button {
 
     }
   }
-#header{
-  min-width:300px;
-  .secondary-nav-container{
-    .content{
-      ul{
 
-        li{
-          margin:  5px 5px;
-          font-size: 10px;
-          &:nth-last-child(-n+3){
-            display:none;
+  #header {
+    min-width: 300px;
+
+    .secondary-nav-container {
+      .content {
+        ul {
+          li {
+            margin: 5px;
+            font-size: 10px;
+
+            &:nth-last-child(-n+3) {
+              display: none;
+            }
           }
         }
       }
     }
+
+    .main-nav-container {
+      padding-bottom: 10px;
+
+      .content {
+        min-width: none;
+        padding-top: 10px;
+
+        a.logo {
+          display: none;
+        }
+
+        ul {
+          position: relative;
+          padding-left: 0;
+          width: 99vw;
+          min-width: 300px;
+          text-align: center;
+
+          li {
+            margin: 10px;
+            font-size: 15px;
+
+            &:first-child {
+              }
+          }
+        }
+      }
+    }
+
   }
-    .main-nav-container{
-      padding-bottom:10px;
-    
-      .content{
-        min-width:none;
-        padding-top:10px;
-      a.logo{
-        display:none;
-      }
-      ul{
-        position: relative;
-        padding-left: 0;
-        width:99vw;
-        min-width:300px;
-        text-align:center;
-        li{
-          margin-left:0;
-          margin: 10px;
-          font-size:15px;
-          &:first-child{
-          
-            
-          }
-        }
-      }
-    }
-    }
-  
-  
-}
+
   .content-container#monthly-cta {
     background: @astah-light-green;
     padding: 25px 0;
@@ -604,19 +630,21 @@ a.button {
       }
     }
   }
+
   .content-container#footer {
-    height:100%;
-    width:100%;
+    height: 100%;
+    width: 100%;
+
     .content {
-     width:95%;
-     
-      .footer-links{
-       margin:0 auto;
-        width:80%;
-        padding-top:0;
+      width: 95%;
+
+      .footer-links {
+        margin: 0 auto;
+        width: 80%;
+        padding-top: 0;
         text-align: left;
-        
-        .footer-col{
+
+        .footer-col {
           float: none;
           display: inline-block;
           vertical-align: top;
@@ -627,7 +655,6 @@ a.button {
     }
   }
 }
-
 
 //IE Hot fixes
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {}

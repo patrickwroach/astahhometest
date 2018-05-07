@@ -32,6 +32,10 @@ a.button:last-of-type {
 a.button.white {
   background-color: #fff;
 }
+a.button.green {
+  background-color: #5c9f43;
+  color: #fff;
+}
 a.button.hollow {
   background: transparent;
   border: 2px solid;
@@ -241,6 +245,9 @@ a.button.purple-text {
 .content-container#reasons .content .button {
   font-size: 15px;
 }
+.content-container#friends .content {
+  position: relative;
+}
 .content-container#friends .content .section .column.image {
   width: 30%;
 }
@@ -248,11 +255,21 @@ a.button.purple-text {
   border-radius: 50%;
 }
 .content-container#friends .content .section .column.copy p.attribution {
-  font-size: 1.1vw;
+  font-size: 1.2vw;
   font-style: italic;
 }
 .content-container#friends .content .button {
-  font-size: 15px;
+  font-size: 17px;
+}
+.content-container#friends .content .button.slider {
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  padding: 5px 20px;
+}
+.content-container#friends .content .button.slider:last-of-type {
+  left: initial;
+  right: 0;
 }
 .content-container#footer .content {
   min-width: 0;
@@ -299,7 +316,7 @@ a.button.purple-text {
     min-width: 300px;
   }
   #header .secondary-nav-container .content ul li {
-    margin: 5px 5px;
+    margin: 5px;
     font-size: 10px;
   }
   #header .secondary-nav-container .content ul li:nth-last-child(-n+3) {
@@ -323,7 +340,6 @@ a.button.purple-text {
     text-align: center;
   }
   #header .main-nav-container .content ul li {
-    margin-left: 0;
     margin: 10px;
     font-size: 15px;
   }
