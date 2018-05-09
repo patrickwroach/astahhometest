@@ -369,8 +369,10 @@ a.button {
 .content-container#friends {
   .content {
     position: relative;
+    width: 75%;
 
     .section {
+      min-height: 250px;
       .column {
         &.image {
           width: 30%;
@@ -396,14 +398,15 @@ a.button {
 
       &.slider {
         position: absolute;
-        left: 0;
-        bottom: 5px;
-
-        padding: 5px 20px;
-
+        left: -7.5vw;;
+        top:49%;
+        font-size:30px;
+        padding:0;
+        
         &:last-of-type {
           left: initial;
-          right: 0;
+          right: -7.5vw
+       
         }
       }
     }
@@ -619,6 +622,12 @@ a.button {
     .content {
       .section {
         .column {
+          &.image{
+            height:200px;
+            width:200px;
+            padding:0;
+            margin:0 auto;
+          }
           &.copy {
             p {
               &.attribution {
@@ -627,6 +636,13 @@ a.button {
             }
           }
         }
+       
+        }
+        .button{
+          &.slider{
+            top:225px;
+            bottom:initial;
+          }
       }
     }
   }
