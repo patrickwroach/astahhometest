@@ -415,6 +415,9 @@ a.button.purple-text {
   .content-container#friends .content .section .column.copy p.attribution {
     font-size: 15px;
   }
+  .content-container#friends .content .button {
+    font-size: 15px;
+  }
   .content-container#friends .content .button.slider {
     top: 225px;
     bottom: auto;
