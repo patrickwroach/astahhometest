@@ -258,9 +258,6 @@ a.button.purple-text {
   font-size: 1.2vw;
   font-style: italic;
 }
-.content-container#friends .content .button {
-  font-size: 17px;
-}
 .content-container#friends .content .button.slider {
   position: absolute;
   left: 0;
